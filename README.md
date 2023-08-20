@@ -1,3 +1,28 @@
+#Note Taker 
+
+Project was designed to help you store notes.
+
+![Screenshot 2023-08-19 at 19-57-24 Note Taker](https://github.com/Crow-III/NoteTaker/assets/125842534/2a2d1dd7-dd97-486b-a73d-e7bea14991ae)
+
+
+
+
+*Resources 
+Chatgpt 
+google 
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 11 Express.js: Note Taker
 
 ## Your Task
