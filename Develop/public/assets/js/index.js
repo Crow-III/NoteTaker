@@ -118,12 +118,12 @@ const handleRenderSaveBtn = () => {
   }
 };
 
-// Render the list of note titles
+
 const renderNoteList = async (notes) => {
   let jsonNotes = await notes.json();
-  if (window.location.pathname === '/notes') {
-    noteList.forEach((el) => (el.innerHTML = ''));
-  }
+  
+  // Clear the noteList container
+  noteList.innerHTML = '';
 
   let noteListItems = [];
 
@@ -167,13 +167,16 @@ const renderNoteList = async (notes) => {
     noteListItems.push(li);
   });
 
+  // Append the noteListItems to the noteList container
+  noteListItems.forEach((note) => noteList.append(note));
+};
+
+
   if (window.location.pathname === '/notes') {
     noteListItems.forEach((note) => noteList[0].append(note));
   }
 };
-// ... (other variable declarations)
 
-// ... (other variable declarations)
 
 const getAndRenderNotes = () => {
   getNotes().then(renderNoteList);
